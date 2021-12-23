@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermesery</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/main.min.css">
+    <!-- Fontawesome -->
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@300;600&display=swap"
+        rel="stylesheet">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!-- Notyf CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__logo">Hermesery</h1>
+        <form class="header__form" method="GET">
+            <input type="text" class="header__form--input" placeholder="Search for any IP address">
+            <button type="submit" class="header__form--button">
+                <i class="far fa-chevron-right"></i>
+            </button>
+        </form>
+        <div class="header__info">
+            <span>
+                <h2 class="header__info--label">Ip Address</h2>
+                <p class="header__info--value" id="ip-address">-</p>
+            </span>
+            <span>
+                <h2 class="header__info--label">Location</h2>
+                <p class="header__info--value" id="location">-</p>
+            </span>
+            <span>
+                <h2 class="header__info--label">Timezone</h2>
+                <p class="header__info--value" id="timezone">-</p>
+            </span>
+            <span>
+                <h2 class="header__info--label">ISP</h2>
+                <p class="header__info--value" id="isp">-</p>
+            </span>
+        </div>
+    </header>
+    <section class="map-container">
+        <div class="map" id="map"></div>
+    </section>
+
+    <!-- Notyf JS -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <!-- JS -->
+    <script src="/src/js/app.min.js"></script>
+</body>
+
+</html>
